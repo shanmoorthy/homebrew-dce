@@ -15,4 +15,8 @@ class Dce < Formula
             end
         end
     end
+
+    def install
+        bin.install "dce"
+    end
 end
