@@ -19,4 +19,9 @@ class Dce < Formula
     def install
         bin.install "dce"
     end
+
+    test do
+        help_text = shell_output("#{bin}/dce --help")
+        assert_includes help_text, "Usage:"
+    end
 end
